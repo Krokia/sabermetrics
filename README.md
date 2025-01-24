@@ -1,1 +1,3 @@
-# sabermetrics
+# Sabermetrics
+
+Ongoing project.

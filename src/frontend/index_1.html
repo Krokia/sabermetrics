@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Sabermetrics</title>
+        <link rel="stylesheet" href="themes/style-light.css">
+    </head>
+
+    <body>
+        <div id="div1" class="container">
+            <h1>Batter Sabermetrics</h1>
+            
+            <select id="operation">
+                <option value="OBP">On base percentage</option>
+                <option value="SLG">Slugging</option>
+                <option value="OPS">On base-plus slugging</option>
+            </select>
+
+            <label for="inpH">Hits:</label>
+            <input id="inpH" type="number" placeholder="H" >
+            <br>
+            <label for="inpBB">Base per balls:</label>
+            <input id="inpBB" type="number" placeholder="BB">
+            <br>
+            <label for="inpGP">Games played:</label>
+            <input id="inpGP" type="number" placeholder="GP">
+            <br>
+            <label for="inpVB">Times at bat:</label>
+            <input id="inpVB" type="number" placeholder="VB">
+            <br>
+            <label for="inpSH">Sacrifice hits:</label>
+            <input id="inpSH" type="number" placeholder="SH">
+            <br>
+            <label for="inpSingle">Singles:</label>
+            <input id="inpSingle" type="number" placeholder="Singles">
+            <br>
+            <label for="inpDouble">Doubles:</label>
+            <input id="inpDouble" type="number" placeholder="Doubles">
+            <br>
+            <label for="inpTriple">Triples:</label>
+            <input id="inpTriple" type="number" placeholder="Triples">
+            <br>
+            <label for="inpHR">Homeruns:</label>
+            <input id="inpHR" type="number" placeholder="HR">
+            
+            <button id="calculateBtn">Calculate</button>
+
+            <h3>Result: <span id="result">N/A</span></h3>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
