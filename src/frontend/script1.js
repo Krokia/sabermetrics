@@ -1,4 +1,4 @@
-document.getElementById("calculateBtn").
+document.getElementById("calculateBtn1").
     addEventListener("click", async() => {
 
         const H = parseInt(document.getElementById("inpH").value);
@@ -28,18 +28,6 @@ document.getElementById("calculateBtn").
                 method = "calc_ops";
                 params = {H, BB, GP, VB, SH, single, double, triple, HR}
             }
-            else if  (operation === "K9") {
-                method = "calc_k9";
-                params = {K, IP}
-            }
-            else if  (operation === "FIP") {
-                method = "calc_fip";
-                params = {HR, BB, GP, IBB, K, IP}
-            }
-            else if  (operation === "BABIP") {
-                method = "calc_babip";
-                params = {H, HR, K, SF, TB}
-            }
 
             // Llamar a mi servicio web (back-end) a través de una http request
             const endpoint = "http://127.0.0.1:8000/" + method;
@@ -67,4 +55,3 @@ document.getElementById("calculateBtn").
         }
 
     });
-    

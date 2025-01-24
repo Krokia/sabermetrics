@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Pitcher</title>
+        <link rel="stylesheet" href="themes/style-light.css">
+    </head>
+
+    <body>
+        <div id="div1" class="container">
+            <h1>Pitcher Sabermetrics</h1>
+            
+            <select id="operation">
+                <option value="K9">(K/9) Strikeouts per nine innings pitched</option>
+                <option value="FIP">(FIP) Fielding independent pitching</option>
+                <option value="BABIP">(BABIP) Battin average on ball in play</option>
+            </select>
+
+            <label for="inpK">Strike outs:</label>
+            <input id="inpK" type="number" placeholder="K" >
+            <br>
+            <label for="inpIP">Innings pitched:</label>
+            <input id="inpIP" type="number" placeholder="IP">
+            <br>
+            <label for="inpHR">Homeruns:</label>
+            <input id="inpHR" type="number" placeholder="HR">
+            <br>
+            <label for="inpBB">Base per balls:</label>
+            <input id="inpBB" type="number" placeholder="BB">
+            <br>
+            <label for="inpGP">Games played:</label>
+            <input id="inpGP" type="number" placeholder="GP">
+            <br>
+            <label for="inpIBB">Intentional BB:</label>
+            <input id="inpIBB" type="number" placeholder="IBB">
+            <br>
+            <label for="inpSF">Sacrifices in fly:</label>
+            <input id="inpSF" type="number" placeholder="SF">
+            <br>
+            <label for="inpTB">Turns at bat:</label>
+            <input id="inpTB" type="number" placeholder="TB">
+            <br>
+            <label for="inpH">Hits:</label>
+            <input id="inpH" type="number" placeholder="H">
+            
+            <button id="calculateBtn2">Calculate</button>
+
+            <h3>Result: <span id="result">N/A</span></h3>
+        </div>
+
+        <script src="script2.js"></script>
+    </body>
+
+</html>
